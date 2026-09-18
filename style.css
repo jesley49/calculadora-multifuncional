@@ -14,7 +14,12 @@ body{
     align-items:center;
 
     height:100vh;
-
+  background-image: url('bibli.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: sans-serif;
 }
 
 .calculadora{
