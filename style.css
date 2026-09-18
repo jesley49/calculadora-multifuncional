@@ -62,7 +62,8 @@ input{
 }
 
 button{
-
+     color: #c71f1f;     
+    margin-top:20px;
     width:48%;
     padding:10px;
 
