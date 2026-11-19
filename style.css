@@ -1,84 +1,101 @@
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-body{
-
-    font-family: Arial, Helvetica, sans-serif;
-    background:#f4f4f4;
-
-    display:flex;
-    justify-content:center;
-    align-items:center;
-
-    height:100vh;
-  background-image: url('bibli.jpg');
+body {
+    font-family: 'Segoe UI', Arial, Helvetica, sans-serif;
+    background-color: #f4f4f4;
+    background-image: url('bibli.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
 }
 
-.calculadora{
-
-    background:color: rgb(8, 144, 181);
-    padding:30px;
-
-    width:350px;
-
-    border-radius:10px;
-
-    box-shadow:0px 0px 10px rgba(0,0,0,.2);
-
+.calculadora {
+    background-color: rgba(8, 144, 181, 0.92);
+    backdrop-filter: blur(8px);
+    padding: 30px;
+    width: 100%;
+    max-width: 360px;
+    border-radius: 14px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    color: #ffffff;
 }
 
-h1{
-    color:  rgb(23, 23, 219);
-    text-align:center;
-    margin-bottom:20px;
-
+h1 {
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.6rem;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
-label{
-
-    display:block;
-    margin-top:15px;
-
+label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+    font-size: 0.95rem;
 }
 
-input{
-
-    width:100%;
-    padding:10px;
-    margin-top:5px;
-
+input {
+    width: 100%;
+    padding: 12px;
+    margin-top: 6px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    outline: none;
+    transition: box-shadow 0.2s ease;
 }
 
-.botoes{
-
-    display:flex;
-    justify-content:space-between;
-
-    margin-top:20px;
-
+input:focus {
+    box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.5);
 }
 
-button{
-    color: rgb(214, 66, 13);    
-    margin-top:20px;
-    width:48%;
-    padding:10px;
-
-    cursor:pointer;
-
+.botoes {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: 25px;
 }
 
-#resultado{
+button {
+    background-color: #ffffff;
+    color: rgb(214, 66, 13);
+    border: none;
+    border-radius: 8px;
+    width: 48%;
+    padding: 12px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+}
 
-    margin-top:25px;
-    text-align:center;
+button:hover {
+    background-color: #f0f0f0;
+    transform: translateY(-2px);
+}
 
+button:active {
+    transform: translateY(0);
+}
+
+#resultado {
+    margin-top: 25px;
+    padding: 12px;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: bold;
+    min-height: 45px;
 }
